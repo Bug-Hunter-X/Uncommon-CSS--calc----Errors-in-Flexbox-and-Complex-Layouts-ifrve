@@ -1,0 +1,26 @@
+/* bugSolution.css */
+.container {
+  display: flex;
+  width: 500px;
+}
+
+.item {
+  width: calc(50% - 10px); /* Corrected: space added between operators and values */
+  background-color: lightblue;
+  margin: 5px;
+  box-sizing: border-box; /* Ensures padding and border are included in the width calculation */
+}
+
+/*Another example with different units - the correct way of handling it*/
+.item2 {
+  width: calc(33% - 10px);
+  background-color: lightcoral;
+  margin: 5px;
+  box-sizing: border-box;
+}
+.item3 {
+  width: calc(100vw - 20px); /* Correct use of viewport width */
+  background-color: lightgreen;
+  margin: 5px;
+  box-sizing: border-box;
+}
